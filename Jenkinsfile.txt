@@ -10,10 +10,6 @@ pipeline {
 	string(name: 'AppName', description: "Name of the Application",defaultValue: "kubernetes-configmap-reload")
     string(name: 'docker_repo', description: "Name of docker repository",defaultValue: "praveensingam1994")
   }
-      
-  tools{ 
-        maven_home 'C:/Users/addur/Downloads/apache-maven-3.9.7-bin/apache-maven-3.9.7'
-    }
     stages {
         stage('Git-Checkout') {
             when {
