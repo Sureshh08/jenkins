@@ -18,7 +18,7 @@ pipeline {
             steps {
                 gitCheckout(
                     branch: "main",
-                    url: ""
+                    url: "https://github.com/Sureshh08/jenkins.git"
                 )
             }
         }
