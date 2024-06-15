@@ -11,14 +11,6 @@ pipeline {
     string(name: 'docker_repo', description: "Name of docker repository",defaultValue: "praveensingam1994")
   }
     stages {
-        stage('Git-Checkout') {
-            steps {
-                gitCheckout(
-                    branch: "main",
-                    url: "https://github.com/Sureshh08/jenkins/blob/main/Jenkinsfile.txt"
-                )
-            }
-        }
         stage('Build-Maven'){
             when {
 				expression { params.action == 'create' }
